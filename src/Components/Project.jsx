@@ -24,10 +24,15 @@ const Project = () => (
           <div className='absolute inset-0 flex justify-center items-center  '>
             <p className='text-[#D9D9D9] font-playfair text-8xl font-bold'>{project.id}</p>
           </div>
+         
           <img src={project.image}alt className='w-full h-full absolute  inset-0 opacity-0  object-cover transition-all duration-300 group-hover:opacity-100 blur-sm filter brightness-50 ' />
+          <div className='flex justify-center absolute top-[-100%] transition-all duration-300 rounded-lg group-hover:bottom-[0]  '>
+          </div>
           <div className="absolute bottom-[-100%]  p-4 h-full w-full flex justify-center items-center text-custom-white transition-all duration-300  group-hover:bottom-0 ">
            <div> <p className='font-poppins text-base font-semibold flex justify-center items-center mb-4 '>{project.title}</p>
-           <p className='font-poppins text-sm font-extralight flex justify-center items-center '>{project.description}</p></div>
+           <p className='font-poppins text-sm font-extralight flex justify-center items-center '>{project.description}</p>
+           <button className='bg-custom-green p-1  mt-4 rounded-lg flex justify-center items-center'>Full Project</button>
+           </div>
           </div>
          
         </div>

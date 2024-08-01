@@ -4,7 +4,8 @@ import line from '../Assets/Line.svg'
 import { myInfo } from '../Utilities/Information'
 const AboutMe = () => {
   return (
-    <div className='h-screen w-full flex bg-[#121212]'>
+    <div className='h-screen relative w-full flex bg-[#121212]'>
+      <img src={line} className='absolute -ml-6 -mt-20 h-[500] opacity-75 -rotate-3 mr-44'/>
       <div className=' image-section w-1/2  flex justify-center items-center'>
          <div>
            <Lottie/> 
