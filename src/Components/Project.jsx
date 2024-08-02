@@ -1,7 +1,7 @@
 import React from 'react'
 import AutoScroll from '../Assets/Auto Scroll.svg';
-import coke from '../Assets/coke.png'
-import { myInfo, projects } from '../Utilities/Information'
+
+import { projects } from '../Utilities/Information'
 const Project = () => (
   <div className='h-[900px] bg-[#121212]'>
     <div className='title mt-20 ml-24'>
@@ -26,12 +26,14 @@ const Project = () => (
           </div>
          
           <img src={project.image}alt className='w-full h-full absolute  inset-0 opacity-0  object-cover transition-all duration-300 group-hover:opacity-100 blur-sm filter brightness-50 ' />
-          <div className='flex justify-center absolute top-[-100%] transition-all duration-300 rounded-lg group-hover:bottom-[0]  '>
-          </div>
+         
           <div className="absolute bottom-[-100%]  p-4 h-full w-full flex justify-center items-center text-custom-white transition-all duration-300  group-hover:bottom-0 ">
            <div> <p className='font-poppins text-base font-semibold flex justify-center items-center mb-4 '>{project.title}</p>
            <p className='font-poppins text-sm font-extralight flex justify-center items-center '>{project.description}</p>
-           <button className='bg-custom-green p-1  mt-4 rounded-lg flex justify-center items-center'>Full Project</button>
+           <div className='flex justify-center items-center pt-4'>
+            <a href={project.link}>
+           <button className='px-4 py-1 rounded-lg  bg-custom-green  text-[#D9D9D9] focus:ring-2 focus:ring-custom-white hover:shadow-2xl transition duration-200'>Full Project</button></a>
+           </div>
            </div>
           </div>
          

@@ -14,7 +14,7 @@ import CircularProgress from '@mui/material/CircularProgress';
             }
             return Math.min(prevProgress + increment, targetPercentage);
           });
-        }, 800);
+        }, 100);
     
         return () => {
           clearInterval(timer);
