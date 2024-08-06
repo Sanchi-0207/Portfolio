@@ -4,6 +4,7 @@ import jungle from '../Assets/Jungle.png'
 import happy from '../Assets/Happy.png'
 import safar from '../Assets/safar.png'
 import outfit from '../Assets/outfit.png'
+import zen from '../Assets/zen.png'
 export const myInfo={
     name:"Sanchi Chaurasia",
     description:"I design intuitive UI/UX interfaces, create detailed 3D models in Blender for games and VR, and develop responsive web applications with React.js."
@@ -40,6 +41,7 @@ export const projects=[
     {
         id:5,
         title:"Zen Ramen Website",
+        image:zen,
         description:"Explore our ramen website UI with an intuitive design, featuring enticing menus, vibrant visuals, and easy filters for a seamless dining experience and effortless ordering.",
         link:"https://www.figma.com/proto/mtVHQW4eyna18mAlxdNBEs/Untitled?page-id=0%3A1&type=design&node-id=73-303&viewport=313%2C136%2C0.07&t=eyOpUdiMzCFu2GEl-1&scaling=scale-down&starting-point-node-id=5%3A14"
     },
