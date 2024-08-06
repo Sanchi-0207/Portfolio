@@ -1,36 +1,40 @@
-import React from 'react'
-import Lottie from './Lottie'
-import line from '../Assets/Line.svg'
-import { myInfo } from '../Utilities/Information'
+import React from "react";
+import Lottie from "./Lottie";
+import line from "../Assets/Line.svg";
+import { myInfo } from "../Utilities/Information";
+
 const AboutMe = () => {
   return (
-    <div className='h-screen relative w-full flex bg-[#121212]'>
-      <img src={line} className='absolute -ml-6 -mt-20 h-[500] opacity-75 -rotate-3 mr-44'/>
-      <div className=' image-section w-1/2  flex justify-center items-center'>
-         <div>
-           <Lottie/> 
-         </div>
-      </div>
-      <div className=' detail w-1/2 flex flex-col justify-center items-center pr-32 gap-6'>
-     
-        <div className=' flex items-end w-full'> 
-        <p className='font-playfair font-bold text-8xl text-transparent text ml-auto'
-        style={{ WebkitTextStroke: '1px #50724B' }}>SANCHI</p>
-        </div>
-        <div className='flex items-end w-full'>
-        <p className='font-playfair font-bold text-8xl text-custom-green ml-auto'>CHAURASIA</p>
-        </div>
-        
-        <div className='flex items-end w-full'>
-        <p className='font-poppins text-[#D9D9D9] font-medium text-base ml'>{
-          myInfo.description
-          }</p>
-          </div>
-      </div>
-    </div>
+    <div className="relative w-full h-screen flex flex-col lg:flex-row" id="about me">
     
+      <div className="w-full h-full lg:w-1/2 flex justify-center items-center p-4 lg:p-8 relative z-10">
+        <Lottie />
+      </div>
+      <div className="w-full lg:w-1/2 flex flex-col lg:gap-4 justify-center items-center lg:items-start p-4 z-10">
+        <div className="relative w-full">
+          <p
+            className="font-playfair font-bold text-4xl lg:text-8xl text-transparent"
+            style={{ WebkitTextStroke: "1px #50724B" }}>
+            SANCHI
+          </p>
+        </div>
+        <div className="relative w-full">
+          <p className="font-playfair font-bold text-4xl lg:text-8xl text-custom-green">
+            CHAURASIA
+          </p>
+        </div>
+        <div className="relative w-full">
+          <p className="font-poppins text-base lg:text-lg text-[#D9D9D9]">
+            {myInfo.description}
+          </p>
+        </div>
+      </div>
+      <div className="absolute md:-mt-0 z-0 ">
+        <img src={line} className="opacity-70 "/>
+      </div>
+     
+    </div>
+  );
+};
 
-  )
-}
-
-export default AboutMe
+export default AboutMe;

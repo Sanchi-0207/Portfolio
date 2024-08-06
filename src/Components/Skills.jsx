@@ -1,36 +1,97 @@
 import React from 'react'
-// import front from '../Assets/front wave.svg'
 import Stack from '@mui/material/Stack';
 import CircularDeterminate from './Progress.jsx';
 import figma from '../Assets/figma.png'
 import react from '../Assets/react.png'
 import blender from '../Assets/blender.png'
-import { useState,useEffect } from 'react';
-// import back from '../Assets/back wave.svg'
-const Skills = () => {
 
- 
+const Skills = () => {
   return (
-    <div className='h-[500px] bg-[#121212]'>
-        <p className='font-playfair font-bold text-8xl text-custom-white ml-24 '>SKILLS</p>
-        <div className='relative'>
-        <Stack className='flex justify-center items-center gap-52 pt-40' direction={'row'}>
-       <div className='flex flex-col justify-center items-center '>
-      <CircularDeterminate targetPercentage={75} size="180px" color="#50724B" imageSrc={react} />
-      <p className='font-poppins text-xl text-custom-green font-semibold items-center pt-11'>ReactJS</p>
+    <div className="h-auto " id="skills">
+      <p className="font-playfair font-bold text-4xl lg:text-8xl text-custom-white ml-24 ">
+        SKILLS
+      </p>
+      <div className="relative   hidden md:block animate-slideUp px-4 md:px-10">
+        <Stack
+          direction="row"
+          className="flex justify-center items-center gap-44 md:gap-20 pt-20 md:pt-40">
+            <div className='lg:mr-8'>
+          <CircularDeterminate
+            targetPercentage={75}
+            size="200px" 
+            color="#50724B"
+            imageSrc={react}
+          />
+          <div className='flex justify-center items-center'>
+            <p className='font-poppins text-2xl font-semibold text-[#D9D9D9] pt-5'>ReactJS</p>
+          </div>
+          </div>
+          <div className='lg:ml-8 lg:mr-8'>
+          <CircularDeterminate
+            targetPercentage={85}
+            size="200px" 
+            color="#50724B"
+            imageSrc={blender}
+          />
+           <div className='flex justify-center items-center'>
+            <p className='font-poppins text-2xl font-semibold text-[#D9D9D9] pt-5'>Blender</p>
+          </div>
+          </div>
+          <div className='lg:ml-8'>
+          <CircularDeterminate
+            targetPercentage={90}
+            size="200px" // Adjust size for responsiveness
+            color="#50724B"
+            imageSrc={figma}
+          />
+           <div className='flex justify-center items-center'>
+            <p className='font-poppins text-2xl font-semibold text-[#D9D9D9] pt-5'>Figma</p>
+          </div>
+          </div>
+        </Stack>
       </div>
-      <div className='flex flex-col justify-center items-center'>
-      <CircularDeterminate targetPercentage={85} size="180px" color="#50724B" imageSrc={blender} />
-      <p className='font-poppins text-xl text-custom-green font-semibold items-center pt-11'>Blender</p></div>
-      <div className='flex flex-col justify-center items-center'>
-      <CircularDeterminate targetPercentage={90} size="180px" color="#50724B" imageSrc={figma} />
-      <p className='font-poppins text-xl text-custom-green font-semibold items-center pt-11'>Figma</p></div>
-    </Stack>
-   
-          
+
+      <div className="relative block md:hidden animate-slideUp px-4 md:px-10">
+        <Stack
+          direction="row"
+          className="flex justify-center items-center gap-12 md:gap-20 pt-20 md:pt-40">
+            <div>
+          <CircularDeterminate
+            targetPercentage={75}
+            size="90px" 
+            color="#50724B"
+            imageSrc={react}
+          />
+           <div className='flex justify-center items-center'>
+            <p className='font-poppins text-xl font-semibold text-[#D9D9D9] pt-5'>ReactJS</p>
+          </div>
+          </div>
+          <div>
+          <CircularDeterminate
+            targetPercentage={85}
+            size="90px" 
+            color="#50724B"
+            imageSrc={blender}
+          />
+           <div className='flex justify-center items-center'>
+            <p className='font-poppins text-xl font-semibold text-[#D9D9D9] pt-5'>Blender</p>
+          </div>
+          </div>
+          <div>
+          <CircularDeterminate
+            targetPercentage={90}
+            size="90px" 
+            color="#50724B"
+            imageSrc={figma}
+          />
+           <div className='flex justify-center items-center'>
+            <p className='font-poppins text-xl font-semibold text-[#D9D9D9] pt-5'>Figma</p>
+          </div>
+          </div>
+        </Stack>
+      </div>
     </div>
-    </div>
-  )
+  );
 }
 
 export default Skills
