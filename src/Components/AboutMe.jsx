@@ -5,16 +5,20 @@ import { myInfo } from "../Utilities/Information";
 
 const AboutMe = () => {
   return (
-    <div className="relative w-full h-screen flex flex-col lg:flex-row" id="about me">
-    
-      <div className="w-full h-full lg:w-1/2 flex justify-center items-center p-4 lg:p-8 relative z-10">
-        <Lottie />
+    <div className="relative w-full h-screen top-28 flex flex-col lg:flex-row" id="about">
+      
+      <div className="flex justify-center items-center w-full lg:w-1/2">
+        <div className="md:w-full md:h-full w-[80%] flex justify-center items-center p-4 lg:p-8 relative z-10">
+          <Lottie />
+        </div>
       </div>
-      <div className="w-full lg:w-1/2 flex flex-col lg:gap-4 justify-center items-center lg:items-start p-4 z-10">
+
+      <div className="w-full lg:w-1/2 flex flex-col md:gap-4 gap-3 justify-center items-center lg:items-start p-4 z-10">
         <div className="relative w-full">
           <p
             className="font-playfair font-bold text-4xl lg:text-8xl text-transparent"
-            style={{ WebkitTextStroke: "1px #50724B" }}>
+            style={{ WebkitTextStroke: "1px #50724B" }}
+          >
             SANCHI
           </p>
         </div>
@@ -24,15 +28,15 @@ const AboutMe = () => {
           </p>
         </div>
         <div className="relative w-full">
-          <p className="font-poppins text-base lg:text-lg text-[#D9D9D9]">
+          <p className="font-poppins text-sm md:text-lg text-[#D9D9D9]">
             {myInfo.description}
           </p>
         </div>
       </div>
-      <div className="absolute md:-mt-0 z-0 ">
-        <img src={line} className="opacity-70 "/>
+      
+      <div className="absolute md:-mt-0 mt-20 -ml-10 md:-ml-0 z-0">
+        <img src={line} className="opacity-70" />
       </div>
-     
     </div>
   );
 };
