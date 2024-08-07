@@ -8,7 +8,7 @@ import blender from '../Assets/blender.png'
 const Skills = () => {
   return (
     <div className="h-auto " id="skills">
-      <p className="font-playfair font-bold text-4xl lg:text-8xl text-custom-white ml-24 ">
+      <p className="font-playfair flex justify-center font-bold text-4xl lg:text-8xl text-custom-white md:ml-24 md:block">
         SKILLS
       </p>
       <div className="relative   hidden md:block animate-slideUp px-4 md:px-10">
@@ -58,34 +58,34 @@ const Skills = () => {
             <div>
           <CircularDeterminate
             targetPercentage={75}
-            size="90px" 
+            size="70px" 
             color="#50724B"
             imageSrc={react}
           />
            <div className='flex justify-center items-center'>
-            <p className='font-poppins text-xl font-semibold text-[#D9D9D9] pt-5'>ReactJS</p>
+            <p className='font-poppins text-lg font-medium text-[#D9D9D9] pt-5'>ReactJS</p>
           </div>
           </div>
           <div>
           <CircularDeterminate
             targetPercentage={85}
-            size="90px" 
+            size="70px" 
             color="#50724B"
             imageSrc={blender}
           />
            <div className='flex justify-center items-center'>
-            <p className='font-poppins text-xl font-semibold text-[#D9D9D9] pt-5'>Blender</p>
+            <p className='font-poppins text-lg font-medium text-[#D9D9D9] pt-5'>Blender</p>
           </div>
           </div>
           <div>
           <CircularDeterminate
             targetPercentage={90}
-            size="90px" 
+            size="70px" 
             color="#50724B"
             imageSrc={figma}
           />
            <div className='flex justify-center items-center'>
-            <p className='font-poppins text-xl font-semibold text-[#D9D9D9] pt-5'>Figma</p>
+            <p className='font-poppins text-lg font-medium text-[#D9D9D9] pt-5'>Figma</p>
           </div>
           </div>
         </Stack>

@@ -34,7 +34,7 @@ const AboutMe = () => {
         </div>
       </div>
       
-      <div className="absolute md:-mt-0 mt-20 -ml-10 md:-ml-0 z-0">
+      <div className="absolute md:-mt-0 mt-20  z-0">
         <img src={line} className="opacity-70" />
       </div>
     </div>

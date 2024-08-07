@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        'minus-20': 'calc(100vh - 28px)',
+      },
       keyframes: {
         slideUp: {
           '0%': { transform: 'translateY(100%)' },

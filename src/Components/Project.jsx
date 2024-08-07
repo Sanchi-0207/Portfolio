@@ -3,19 +3,17 @@ import AutoScroll from '../Assets/Auto Scroll.svg';
 import coke from '../Assets/coke.png'
 import { myInfo, projects } from '../Utilities/Information'
 const Project = () => (
-  <div className="h-auto " id="projects">
-    <div className="title mt-20 ml-24 ">
-      <p className="font-playfair text-4xl lg:text-8xl font-bold text-custom-white">
+  <div className="h-auto top-auto" id="projects">
+      <p className="font-playfair text-4xl lg:text-8xl font-bold text-custom-white md:block md:ml-24 flex justify-center">
         PROJECTS
       </p>
-    </div>
     <div className="pt-10">
-      <div className="w-full lg:h-9 bg-custom-green relative overflow-hidden md:h-4 ">
+      <div className="w-full md:h-9 bg-custom-green relative overflow-hidden h-4 ">
         <div className="flex whitespace-nowrap animate-scroll">
-          <img src={AutoScroll} />
-          <img src={AutoScroll} />
-          <img src={AutoScroll} />
-          <img src={AutoScroll} />
+          <img src={AutoScroll} className='h-4 md:h-9'/>
+          <img src={AutoScroll} className='h-4 md:h-9'/>
+          <img src={AutoScroll} className='h-4 md:h-9'/>
+          <img src={AutoScroll} className='h-4 md:h-9'/>
         </div>
       </div>
     </div>
@@ -25,7 +23,7 @@ const Project = () => (
           key={project.id}
           className="w-full md:w-1/5 relative overflow-hidden group cursor-pointer rounded-lg">
           <div className="h-[30rem] inset-0 flex justify-center items-center  ">
-            <p className="text-[#D9D9D9] font-playfair text-8xl font-bold">
+            <p className="text-[#D9D9D9] font-playfair text-6xl lg:text-8xl font-bold">
               {project.id}
             </p>
           </div>
@@ -42,12 +40,12 @@ const Project = () => (
               <p className="font-poppins text-base font-semibold flex justify-center items-center mb-4 ">
                 {project.title}
               </p>
-              <p className="font-poppins text-sm font-extralight flex justify-center items-center ">
+              <p className="font-poppins text-sm  font-extralight flex justify-center items-center ">
                 {project.description}
               </p>
               <div className='flex justify-center items-center '>
               <a href={project.link}>
-              <button className="text-2xl md:text-base mt-7 inline-flex h-12 md:w-5/6  animate-shimmer items-center justify-center rounded-md border border-custom-black bg-[linear-gradient(110deg,#50724B,45%,#D9D9D9,55%,#50724B)] bg-[length:200%_100%] px-6 font-medium text-[#D9D9D9] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D9D9D9] focus:ring-offset-2 focus:ring-offset-custom-black">
+              <button className="text-lg md:text-base mt-7 inline-flex h-8 md:w-5/6  animate-shimmer items-center justify-center rounded-md border md:h-12 border-custom-black bg-[linear-gradient(110deg,#50724B,45%,#D9D9D9,55%,#50724B)] bg-[length:200%_100%] px-6 font-medium text-[#D9D9D9] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D9D9D9] focus:ring-offset-2 focus:ring-offset-custom-black">
                 Full Project
               </button></a>
               </div>

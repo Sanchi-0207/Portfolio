@@ -7,7 +7,7 @@ import './index.css'
 import './App.css'
 function App() {
   return (
-    <div className="bg-[#121212] min-h-screen">
+    <div className="bg-[#121212] min-h-screen flex flex-col">
      <Navbar/>
      <AboutMe/>
      <Project/>
