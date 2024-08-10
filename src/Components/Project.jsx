@@ -1,9 +1,8 @@
 import React from 'react'
 import AutoScroll from '../Assets/Auto Scroll.svg';
-import coke from '../Assets/coke.png'
-import { myInfo, projects } from '../Utilities/Information'
+import { projects } from '../Utilities/Information'
 const Project = () => (
-  <div className="h-auto top-auto" id="projects">
+  <div className="h-auto" id="projects">
       <p className="font-playfair text-4xl lg:text-8xl font-bold text-custom-white md:block md:ml-24 flex justify-center">
         PROJECTS
       </p>

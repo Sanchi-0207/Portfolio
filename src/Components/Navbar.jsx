@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#121212] h-28 flex shadow-2xl py-2.5 fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-[#121212] h-28 flex shadow-2xl py-2.5  top-0 left-0 right-0 z-50">
       <div className="flex flex-wrap items-center justify-end w-full px-4 mx-auto">
         <div className="flex items-center lg:order-2">
           <button
@@ -58,12 +58,12 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          className={`flex items-center justify-end w-full lg:flex lg:order-1 ${
+          className={`flex items-center justify-end lg:justify-center w-full lg:flex lg:order-1 ${
             isOpen ? "block" : "hidden"
           }`}
           id="mobile-menu-2"
         >
-          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 md:w-[70%] w-[30%] justify-between">
+          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 md:w-[70%] w-[35%] justify-between">
             {navItems.map((item) => (
               <li className="relative group" key={item.id} onClick={menuItemClick}>
                 <a

@@ -1,27 +1,36 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
- function CircularDeterminate({ targetPercentage, size, color, imageSrc }) {
+import { useInView } from 'react-intersection-observer';
+
+function CircularDeterminate({ targetPercentage, size, color, imageSrc }) {
   const [progress, setProgress] = React.useState(0);
+  const { ref, inView } = useInView({
+    triggerOnce: true,  // Trigger animation only once
+    threshold: 0.1,     // Adjust this threshold as needed
+  });
 
   React.useEffect(() => {
+    if (!inView) return;
+
     const timer = setInterval(() => {
-        setProgress((prevProgress) => {
-            const increment = 10;
-            if (prevProgress >= targetPercentage) {
-              clearInterval(timer);
-              return targetPercentage;
-            }
-            return Math.min(prevProgress + increment, targetPercentage);
-          });
-        }, 100);
-    
-        return () => {
+      setProgress((prevProgress) => {
+        const increment = 10;
+        if (prevProgress >= targetPercentage) {
           clearInterval(timer);
-        };
-      }, [targetPercentage]);
+          return targetPercentage;
+        }
+        return Math.min(prevProgress + increment, targetPercentage);
+      });
+    }, 100);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [inView, targetPercentage]);
+
   return (
-    <Box position="relative" display="inline-flex">
+    <Box ref={ref} position="relative" display="inline-flex">
       <CircularProgress
         variant="determinate"
         value={progress}
@@ -50,4 +59,4 @@ import CircularProgress from '@mui/material/CircularProgress';
   );
 }
 
-export default CircularDeterminate
+export default CircularDeterminate;

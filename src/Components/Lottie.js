@@ -13,9 +13,14 @@ const LottieAnimation = () => {
   };
 
   return (
-    <div>
-  <Lottie options={defaultOptions} height={400} width={400} />;
+    <div className="w-full flex justify-center items-center">
+   <Lottie
+  options={defaultOptions}
+  className="w-full max-w-[250px] max-h-[250px] md:max-w-[300px] md:max-h-[300px] lg:max-w-[400px] lg:max-h-[400px]"
+/>
+
   </div>
+  
   );
 };
 

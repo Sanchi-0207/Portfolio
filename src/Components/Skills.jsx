@@ -6,12 +6,13 @@ import react from '../Assets/react.png'
 import blender from '../Assets/blender.png'
 
 const Skills = () => {
+
   return (
-    <div className="h-auto " id="skills">
+    <div className="h-auto" id="skills">
       <p className="font-playfair flex justify-center font-bold text-4xl lg:text-8xl text-custom-white md:ml-24 md:block">
         SKILLS
       </p>
-      <div className="relative   hidden md:block animate-slideUp px-4 md:px-10">
+      <div className="relative   hidden md:block  px-4 md:px-10 ref={ref}">
         <Stack
           direction="row"
           className="flex justify-center items-center gap-44 md:gap-20 pt-20 md:pt-40">
@@ -51,7 +52,7 @@ const Skills = () => {
         </Stack>
       </div>
 
-      <div className="relative block md:hidden animate-slideUp px-4 md:px-10">
+      <div className="relative block md:hidden  px-4 md:px-10">
         <Stack
           direction="row"
           className="flex justify-center items-center gap-12 md:gap-20 pt-20 md:pt-40">

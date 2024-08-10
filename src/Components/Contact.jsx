@@ -34,7 +34,7 @@ const Contact = () => {
                 id="email"
                 name='email'
                 className="shadow-sm border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full md:w-4/5 p-2.5 bg-[#D9D9D9]"
-                placeholder="portfolio@flowbite.com"
+                placeholder="name@portfolio.com"
                 required
               />
             </div>
