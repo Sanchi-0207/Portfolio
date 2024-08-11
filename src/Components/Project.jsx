@@ -29,7 +29,7 @@ const Project = () => (
 
           <img
             src={project.image}
-            alt
+            alt='Project Image'
             className="w-full h-full absolute  inset-0 opacity-0  object-cover transition-all duration-300 group-hover:opacity-100 blur-sm filter brightness-50 "
           />
           <div className="flex justify-center absolute top-[-100%] transition-all duration-300 rounded-lg group-hover:bottom-[0]  "></div>

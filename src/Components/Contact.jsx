@@ -74,13 +74,13 @@ const Contact = () => {
       </div>
       <div className="h-16 mt-4 flex flex-col bg-custom-green">
         <div className="w-full h-full flex justify-center gap-4 pt-1">
-          <a href="https://www.linkedin.com/in/sanchi-chaurasia-43a492284/" target="_blank">
+          <a href="https://www.linkedin.com/in/sanchi-chaurasia-43a492284/" target="_blank" rel="noreferrer">
       <FaLinkedin className="md:h-5/6 h-4/6 w-auto "/></a>
-      <a href="https://github.com/Sanchi-0207" target="_blank">
+      <a href="https://github.com/Sanchi-0207" target="_blank" rel="noreferrer">
       <FaGithub className="md:h-5/6 w-auto h-4/6" /></a>
       </div>
       <div className="font-poppins text-sm md:text-base text-custom-black font-normal flex justify-center pb-1">
-        <a href="mailto:chaurasiasanchi@gmail.com" className=" hover:underline">chaurasiasanchi@gmail.com</a>
+        <a href="mailto:chaurasiasanchi@gmail.com" target="_blank" rel="noreferrer" className=" hover:underline">chaurasiasanchi@gmail.com</a>
       </div>
       </div>
     </div>
