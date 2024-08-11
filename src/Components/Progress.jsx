@@ -6,8 +6,8 @@ import { useInView } from 'react-intersection-observer';
 function CircularDeterminate({ targetPercentage, size, color, imageSrc }) {
   const [progress, setProgress] = React.useState(0);
   const { ref, inView } = useInView({
-    triggerOnce: true,  // Trigger animation only once
-    threshold: 0.1,     // Adjust this threshold as needed
+    triggerOnce: true,  
+    threshold: 0.1,    
   });
 
   React.useEffect(() => {
