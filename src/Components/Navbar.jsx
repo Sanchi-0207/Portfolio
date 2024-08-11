@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#121212] h-28 flex shadow-2xl py-2.5  top-0 left-0 right-0 z-50">
+    <nav className="bg-[#121212] h-28 flex sticky shadow-2xl py-2.5  top-0 left-0 right-0 z-50">
       <div className="flex flex-wrap items-center justify-end w-full px-4 mx-auto">
         <div className="flex items-center lg:order-2">
           <button
