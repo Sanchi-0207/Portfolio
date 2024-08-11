@@ -56,7 +56,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="message"
-                className="block mb-2 text-sm font-medium text-gray-900">
+                className="block mb-2 text-sm font-medium text-[#6D6D6D]">
                 Your message
               </label>
               <textarea
