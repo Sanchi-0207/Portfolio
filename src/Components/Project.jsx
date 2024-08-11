@@ -9,10 +9,10 @@ const Project = () => (
     <div className="pt-10">
       <div className="w-full md:h-9 bg-custom-green relative overflow-hidden h-4 ">
         <div className="flex whitespace-nowrap animate-scroll">
-          <img src={AutoScroll} className='h-4 md:h-9'/>
-          <img src={AutoScroll} className='h-4 md:h-9'/>
-          <img src={AutoScroll} className='h-4 md:h-9'/>
-          <img src={AutoScroll} className='h-4 md:h-9'/>
+          <img src={AutoScroll} className='h-4 md:h-9'alt='AutoScroll'/>
+          <img src={AutoScroll} className='h-4 md:h-9'alt='AutoScroll'/>
+          <img src={AutoScroll} className='h-4 md:h-9'alt='AutoScroll'/>
+          <img src={AutoScroll} className='h-4 md:h-9'alt='AutoScroll'/>
         </div>
       </div>
     </div>
